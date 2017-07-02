@@ -1,0 +1,18 @@
+elasticsearch_head:
+  image: mobz/elasticsearch-head:5
+  restart: always
+  ports:
+    - 9100:9100
+
+elasticsearch_5_1_2:
+  image: elasticsearch:5.1.2
+  restart: always
+  ports:
+    - 9200:9200
+
+redis:
+  image: redis
+  restart: always
+  ports:
+    - 6379:6379
+
